@@ -1,0 +1,58 @@
+form>div {
+    margin: 0 0 15px 0;
+}
+
+form>div>label {
+    width: 100%;
+    margin: 0 0 5px 0;
+}
+
+form>div>div,
+form>div>fieldset>div {
+    width: 100%;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea,
+select {
+    width: 100%;
+}
+
+@media screen and (min-width: 64em) {
+    .in-60 {
+        width: 60%;
+    }
+    .in-40 {
+        width: 40%;
+    }
+    input[type=text].address,
+    input[type=email],
+    input[type=url],
+    input[type=password],
+    textarea,
+    select {
+        width: 60%;
+    }
+    
+    input[type=email],
+    input[type=text],
+    input[type=password] {
+        width: 30%;
+    }
+    
+    select {
+        width: 20%;
+    }
+    
+    .deliver-date input {
+        margin-right: 1rem;
+    }
+    
+    .deliver-date textarea {
+        margin-left: 1rem;
+        width: 250px;
+    }
+}

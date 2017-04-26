@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proceso de la compra</title>
+    <link rel="stylesheet" href="font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="container-fluid p1">
+        <!--
+        <div class="navi-header sm-d-f sm-jc-sb container m-a">
+            <nav role="navigation" class="container">
+                <ul class="no-vineta sm-d-f">
+                    <li><a href="#"><i class="fa fa-heart"></i> Hola JDiegoPoccoriE</a></li>
+                    <li><a href="#"><i class="fa fa-user"></i> Mi Cuenta</a></li>
+                    <li><a href="#"><i class="fa fa-sign-out"></i> Salir</a></li>
+                </ul>
+            </nav>
+            <section class="login container">
+                <ul class="no-vineta sm-d-f sm-fxd-rr">
+                    <li><a href="">Registrate</a></li>
+                    <li><a href="">Ingresa</a></li>
+                </ul>
+            </section>
+        </div>
+        <section class="logo m-a container">
+            <img src="img/logo/logob.png" alt="">
+        </section>
+		-->
+    </header>
+    <br>
+
+    <main class="container">
+        <div class="shipping-data p1">
+            <h2 class="fz1_25 md-fz1_75">Datos de Envío</h2>
+            <hr class="m0">
+            <br>
+            <form action="#">
+                <div>
+                    <label class="desc fz_75 sm-fz_1" id="title1" for="Field1">Dirección de Envío:</label>
+                    <div>
+                        <input id="Field1" name="Field1" type="text" class="field text fn fz_75 sm-fz_1 address" value="" size="8" tabindex="1">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="desc fz_75 sm-fz_1" id="title1" for="Field1">Referencia para llegar al lugar de entrega:</label>
+                    <div>
+                        <input id="Field1" name="Field1" type="text" class="field text fn fz_75 sm-fz_1 address" value="" size="8" tabindex="1">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="desc fz_75 sm-fz_1" id="title106" for="Field106">Elija el sector donde se encuentra su dirección:</label>
+                    <div>
+                        <select id="Field106" name="Field106" class="field select medium fz_75 sm-fz_1" tabindex="11"> 
+                              <option value="First Choice" class="fz_75 sm-fz_1">Wanchaq</option>
+                              <option value="Second Choice" class="fz_75 sm-fz_1">Santiago</option>
+                              <option value="Third Choice" class="fz_75 sm-fz_1">Tica Tica - Poroy</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="message">
+                    <p style="color: #198e7f;" class="fz_75 sm-fz_1">"Se actualizó su compra con el precio de envío."</p>
+                </div>
+
+                <h2 class="fz1_25 md-fz1_75">Datos de la Persona</h2>
+                <hr class="m0">
+                <br>
+
+                <div>
+                    <label class="desc fz_75 sm-fz_1" id="title3" for="Field3">Su Correo Electrónico:</label>
+                    <div>
+                        <input id="Field3" name="Field3" class="desc fz_75 sm-fz_1 sm-" type="email" spellcheck="false" value="" maxlength="255" tabindex="3">
+                    </div>
+                </div>
+                
+                <div>
+                    <label class="desc fz_75 sm-fz_1" id="title1" for="Field1">Nombre Completo:</label>
+                    <div>
+                        <input id="Field1" name="Field1" type="text" class="field text fn fz_75 sm-fz_1" value="" size="8" tabindex="1">
+                    </div>
+                </div>
+                
+                <div>
+                    <label class="desc fz_75 sm-fz_1" id="title1" for="Field1">Nro. de Celular:</label>
+                    <div>
+                        <input id="Field1" name="Field1" type="text" class="field text fn fz_75 sm-fz_1" value="" size="8" tabindex="1">
+                    </div>
+                </div>
+                
+                <div>
+                    <label class="desc fz_75 sm-fz_1" id="title1" for="Field1">Cree una nueva Contraseña:</label>
+                    <div>
+                        <input id="Field1" name="Field1" type="text" class="field text fn fz_75 sm-fz_1" value="" size="8" tabindex="1">
+                    </div>
+                </div>
+                <div>
+                    <label class="desc fz_75 sm-fz_1" id="title1" for="Field1">Posibles Fechas de Entraga:</label>
+                    <div class="sm-d-f deliver-date">
+                        <input id="Field1" name="Field1" type="date" class="field text fn fz_75 sm-fz_1 sm-as-fs" value="" size="8" tabindex="1">
+                        <textarea id="Field4" name="Field4" spellcheck="true" rows="3" cols="20" tabindex="4"></textarea>
+                    </div>
+                </div>
+                
+                <div>
+                    <label class="desc fz_75 sm-fz_1" id="title1" for="Field1">¿En qué rango de horas se puede hacer la entrega?</label>
+                    <div>
+                       De:
+                        <select id="Field106" name="Field106" class="field select medium fz_75 sm-fz_1" tabindex="11"> 
+                              <option value="First Choice" class="fz_75 sm-fz_1">09:00</option>
+                              <option value="Second Choice" class="fz_75 sm-fz_1">10:00</option>
+                              <option value="Third Choice" class="fz_75 sm-fz_1">11:00</option>
+                              <option value="First Choice" class="fz_75 sm-fz_1">12:00</option>
+                              <option value="Second Choice" class="fz_75 sm-fz_1">13:00</option>
+                              <option value="Third Choice" class="fz_75 sm-fz_1">14:00</option>
+                              <option value="First Choice" class="fz_75 sm-fz_1">15:00</option>
+                              <option value="Second Choice" class="fz_75 sm-fz_1">16:00</option>
+                              <option value="Third Choice" class="fz_75 sm-fz_1">17:00</option>
+                              <option value="Third Choice" class="fz_75 sm-fz_1">18:00</option>
+                              <option value="Third Choice" class="fz_75 sm-fz_1">19:00</option>
+                        </select>
+                        a:
+                        <select id="Field106" name="Field106" class="field select medium fz_75 sm-fz_1" tabindex="11"> 
+                              <option value="First Choice" class="fz_75 sm-fz_1">09:00</option>
+                              <option value="Second Choice" class="fz_75 sm-fz_1">10:00</option>
+                              <option value="Third Choice" class="fz_75 sm-fz_1">11:00</option>
+                              <option value="First Choice" class="fz_75 sm-fz_1">12:00</option>
+                              <option value="Second Choice" class="fz_75 sm-fz_1">13:00</option>
+                              <option value="Third Choice" class="fz_75 sm-fz_1">14:00</option>
+                              <option value="First Choice" class="fz_75 sm-fz_1">15:00</option>
+                              <option value="Second Choice" class="fz_75 sm-fz_1">16:00</option>
+                              <option value="Third Choice" class="fz_75 sm-fz_1">17:00</option>
+                              <option value="Third Choice" class="fz_75 sm-fz_1">18:00</option>
+                              <option value="Third Choice" class="fz_75 sm-fz_1">19:00</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <input id="saveForm" name="saveForm" type="submit" value="Submit">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <br>
+
+    </main>
+    <footer class="container-fluid" style="height: 250px; margin-top: 1rem">
+    </footer>
+</body>
+
+</html>

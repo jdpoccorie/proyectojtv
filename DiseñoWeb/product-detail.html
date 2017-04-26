@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio Carrito</title>
+    <link rel="stylesheet" href="font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--[if !IE]><!-->
+    <style>
+        /* 
+	Max width before this PARTICULAR table gets nasty
+	This query will take effect for any screen smaller than 760px
+	and also iPads specifically.
+	*/
+        
+        @media only screen and (max-width: 760px),
+        (min-device-width: 768px) and (max-device-width: 1024px) {
+            /* Force table to not be like tables anymore */
+            table,
+            thead,
+            tbody,
+            th,
+            td,
+            tr {
+                display: block;
+            }
+            /* Hide table headers (but not display: none;, for accessibility) */
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            tr {
+                border: 1px solid #ccc;
+            }
+            td {
+                /* Behave  like a "row" */
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+            }
+            td:before {
+                /* Now like a table header */
+                position: absolute;
+                /* Top/left values mimic padding */
+                top: 6px;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+            }
+            /*
+		Label the data
+		*/
+            td:nth-of-type(1):before {
+                content: "Cantidad";
+            }
+            td:nth-of-type(2):before {
+                content: "Producto";
+            }
+            td:nth-of-type(3):before {
+                content: "Precio Unit.";
+            }
+            td:nth-of-type(4):before {
+                content: "Subtotal";
+            }
+            td:nth-of-type(5):before {
+                content: "Eliminar";
+            }
+            td:nth-of-type(6):before {
+                content: "Modificar Cantidad";
+            }
+        }
+        /* Smartphones (portrait and landscape) ----------- */
+        
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+            body {
+                padding: 0;
+                margin: 0;
+                width: 320px;
+            }
+        }
+        /* iPads (portrait and landscape) ----------- */
+        
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            body {
+                width: 495px;
+            }
+        }
+    </style>
+    <!--<![endif]-->
+
+</head>
+
+<body>
+
+    <header class="container-fluid p1" style="height: 160px">
+        <!--
+        <div class="navi-header sm-d-f sm-jc-sb container m-a">
+            <nav role="navigation" class="container">
+                <ul class="no-vineta sm-d-f">
+                    <li><a href="#"><i class="fa fa-heart"></i> Hola JDiegoPoccoriE</a></li>
+                    <li><a href="#"><i class="fa fa-user"></i> Mi Cuenta</a></li>
+                    <li><a href="#"><i class="fa fa-sign-out"></i> Salir</a></li>
+                </ul>
+            </nav>
+            <section class="login container">
+                <ul class="no-vineta sm-d-f sm-fxd-rr">
+                    <li><a href="">Registrate</a></li>
+                    <li><a href="">Ingresa</a></li>
+                </ul>
+            </section>
+        </div>
+        <section class="logo m-a container">
+            <img src="img/logo/logob.png" alt="">
+        </section>
+		-->
+        <div class="header-item container ver-product">
+            <a href="index.html">Seguir viendo Productos <i class="fa fa-eye fa-2x"></i></a>
+        </div>
+    </header>
+
+    <br>
+    <main class="container product-details-container md-d-f md-fxd-rr" style="background-color: white;">
+        <section class="product-lateral" class="item" style="background-color: #fff; width:100%;">
+            <article class="cart item" style="margin-left: 1rem">
+                <h2>Carrito de Compra</h2>
+                <hr>
+                <div id="page-wrap">
+                    <table style="font-weight: bold;">
+                        <thead>
+                            <tr>
+                                <th class="ta-l md-ta-c" style="width: 50px;">Cantidad</th>
+                                <th class="ta-l md-ta-c">Producto</th>
+                                <th class="ta-l md-ta-c" style="width: 50px;" style="width: 50px;">Precio Unitario</th>
+                                <th class="ta-l md-ta-c" style="width: 50px;">Sub Total</th>
+                                <th class="ta-l md-ta-c" style="width: 50px;">Eliminar</th>
+                                <th class="ta-l md-ta-c" style="width: 50px;">Modificar Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="ta-r md-ta-c">3</td>
+                                <td class="ta-r md-ta-c">Lenovo ideapad 500 TM</td>
+                                <td class="ta-r">500.00</td>
+                                <td class="ta-r">1500.00</td>
+                                <td class="ta-r md-ta-c"><i class="fa fa-close fa-2x" style="color:red;"></i></td>
+                                <td class="ta-r md-ta-c"><i class="fa fa-pencil fa-2x modified" style="color:#54b221;"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="ta-r md-ta-c">1</td>
+                                <td class="ta-r md-ta-c">Celular</td>
+                                <td class="ta-r">1000.00</td>
+                                <td class="ta-r">1000.00</td>
+                                <td class="ta-r md-ta-c"><i class="fa fa-close fa-2x" style="color:red;"></i></td>
+                                <td class="ta-r md-ta-c"><i class="fa fa-pencil fa-2x modified" style="color:#54b221;"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="text-align: right; font-weight: 900; font-size: 1.5rem;">Total: <span style="text-align: right; font-weight: 900; font-size: 1.5rem;">$ 2500.00</span></p>
+                    <div class="btn-1 button-buy">
+                        <a href="proceso-compra.html"><i class="fa fa-dollar"></i> Procesar Compra</a>
+                    </div>
+                </div>
+            </article>
+
+            <div class="popup">
+                <h3>Ingrese Cantidad a Comprar</h3>
+                <input type="text" /><br>
+                <button name="close">Aceptar</button>
+            </div>
+        </section>
+        <section style="width:90%;">
+            <article class="product-details sm-d-f jc-sb">
+                <div class="image-main">
+                    <img src="img/lenovo-main.jpg" alt="">
+                </div>
+                <div class="image-navi d-f fxw-w sm-fxd-c">
+                    <img src="img/lenovo.jpg" alt="">
+                    <img src="img/lenovo-main.jpg" alt="">
+                    <img src="img/lenovo-2.jpg" alt="">
+                    <img src="img/lenovo-3.jpg" alt="">
+                </div>
+            </article>
+            <article class="product-details">
+                <h2 class="fz1_25">Nombre: Lenovo ideapad TM 500</h2>
+                <h4>Precio: 500$</h4>
+                <h4>Descripción:</h4>
+                <p class="fz_75 md-fz1_25" style="text-align: justify;">Procesador: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz 2.40GHz <br>Memoria Instalada (RAM): 8.00 GB (7.84 GB utilizable) <br> Tipo de sistema: Sistema Operativo de 64bits, procesador x64 <br>Lápiz y entrada táctil: La entrada táctil o manuscrita no está disponible para esta pantalla.<br>Procesador: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz 2.40GHz <br> Memoria Instalada (RAM): 8.00 GB (7.84 GB utilizable) <br>Tipo de sistema: Sistema Operativo de 64bits, procesador x64 <br>Lápiz y entrada táctil: La entrada táctil o manuscrita no está disponible para esta pantalla.</p>
+                
+                <h4 class="text-method">Métodos de Pago</h4>
+                <div class="payment-methods">
+                    <i class="fa fa-cc-paypal fa-2x"></i>
+                    <i class="fa fa-cc-mastercard fa-2x"></i>
+                    <i class="fa fa-cc-visa fa-2x"></i>
+                </div>
+            </article>
+            <h2 style="text-align: center">PRECIO: 500.00$</h2>
+            <article class="purchase-options sm-d-f">
+                <div class="btn-1 button-cart">
+                    <a data-js="open"><i class="fa fa-cart-plus"></i> Añadir al Carrito</a>
+                </div>
+                <div class="btn-1 button-buy">
+                    <a data-js="open"><i class="fa fa-dollar"></i> Comprar ahora</a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="container-fluid" style="height: 250px; margin-top: 1rem">
+
+    </footer>
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
